@@ -1,33 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Hotel Miranda</title>
-    <link rel="shortcut icon" href="./assets/icons/H.svg" type="image/x-icon" />
-
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/styles.scss" />
-
-    <script src="./js/swiper.js"></script>
-  </head>
-  <body>
-    <!-- Header and Nav -->
-    <?php 
-      $title = "The Perfect Base For You";
-      @include("include/header.php")
-    ?>
+<!-- Head, Header & Nav -->
+<?php
+  $page = "";
+  $title = "The Perfect Base For You";
+  @include("include/header.php");
+?>
 
     <section class="main">
-      <article class="principal">
-        <div class="button__principal">
-          <button class="button">TAKE A TOUR</button>
-          <button class="button">LEARN MORE</button>
-        </div>
-      </article>
-
       <article class="calendar">
         <form action="search">
           <label class="calendar__label" for="arrDate">Arrival Date</label>
@@ -316,6 +294,3 @@
   <?php 
     @include("include/footer.php");
   ?>
-
-  </body>
-</html>

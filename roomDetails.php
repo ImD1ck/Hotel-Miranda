@@ -1,27 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo $_GET["room"] ?> - Details</title>
-    <link rel="shortcut icon" href="./assets/icons/H.svg" type="image/x-icon" />
+<!-- Head, Header & Nav -->
+<?php 
+  $page = $_GET["room"]." - ";
+  $title = "Ultimate Room";
+  @include("include/header.php");
+?>
 
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/styles.scss" />
-</head>
-<body>
-   <!--Header and Nav  -->
-  <?php 
-    $title = "Ultimate Room";
-    @include("include/header.php");
-  ?>
 
-    <section class="intro">
-    <article class="intro__subtitle">
-        <h4>Home | <span>Room Details</span></h4>
-      </article>
-  </section>
 
   <section class="room">
     <article class="room__container">
@@ -147,7 +131,3 @@
   <?php
     @include("include/footer.php")
   ?>
-
-  
-</body>
-</html>

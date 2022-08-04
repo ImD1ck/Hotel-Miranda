@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Hotel Miranda</title>
-  <link rel="shortcut icon" href="./assets/icons/H.svg" type="image/x-icon" />
-
-  <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
-  <link rel="stylesheet" type="text/css" href="./styles/styles.scss" />
-</head>
-<body>
-      <!-- Header and Nav -->
-  <?php 
-    $title = "New Details";
-    @include("include/header.php");
-  ?>
+<!-- Head, Header & Nav -->
+<?php 
+  $page = "Contact - "
+  $title = "New Details";
+  @include("include/header.php");
+?>
 
   <section class="intro">
     <article class="intro__subtitle">
@@ -66,9 +54,6 @@
 
 
   <!-- Footer -->
-  <?php 
-    @include("include/footer.php")
-  ?>
-  
-</body>
-</html>
+<?php 
+  @include("include/footer.php")
+?>

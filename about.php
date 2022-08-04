@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>About Us - Hotel Miranda</title>
-    <link rel="shortcut icon" href="./assets/icons/H.svg" type="image/x-icon" />
-
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/styles.scss" />
-
-    <script src="./js/swiper.js"></script>
-  </head>
-  <body>
-    <!-- Header and Nav -->
-  <?php 
-    $title = "About US";
-    @include("include/header.php");
-  ?>
+<!-- Head, Header & Nav -->
+<?php
+  $page = "About Us - ";
+  $title = "About US";
+  @include("include/header.php");
+?>
 
     <section class="intro">
       <article class="intro__subtitle">
@@ -168,9 +153,7 @@
       </div>
     </section>
 
-  <!-- Footer -->
-    <?php 
-      @include("include/footer.php")
-    ?>
-  </body>
-</html>
+<!-- Footer -->
+<?php 
+  @include("include/footer.php")
+?>

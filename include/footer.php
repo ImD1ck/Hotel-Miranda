@@ -55,3 +55,5 @@
         <span>Terms of use | Privacy Environmental Policy</span>
       </section>
     </footer>
+  </body>
+</html>
