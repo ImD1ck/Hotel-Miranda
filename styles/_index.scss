@@ -1,0 +1,250 @@
+.header {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+  .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .logo {
+      width: 2rem;
+      height: 2rem;
+      padding: 0.4rem;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+        rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
+      &__name {
+        padding: 0.6rem;
+      }
+    }
+  }
+
+  .navigation {
+    display: none;
+
+    &__icons {
+      width: 1rem;
+      height: 1rem;
+      margin: 0.7rem;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}
+
+.main {
+  color: #ffffff;
+
+  .principal {
+    padding: 3rem 1rem;
+    min-width: 100%;
+    background-color: #333333;
+
+    &__title {
+      padding: 3rem 0rem 3rem;
+    }
+  }
+
+  .calendar {
+    background-color: #222222;
+    padding: 1rem;
+    justify-content: left;
+
+    &__label {
+      font-size: 0.8rem;
+    }
+
+    &__fecha {
+      display: block;
+      justify-content: left;
+      padding: 0.5rem;
+      padding-right: 55%;
+      margin: 1rem 1rem 1rem 0rem;
+      border: none;
+      border-bottom: 0.2rem solid #bead8e;
+      color: #686868;
+      background-color: transparent;
+    }
+    &__fecha::-webkit-calendar-picker-indicator {
+      position: absolute;
+      left: 0.4rem;
+
+      filter: invert(79%) sepia(34%) saturate(237%) hue-rotate(0deg)
+        brightness(85%) contrast(82%);
+    }
+
+    &__fecha:focus {
+      border: none;
+    }
+  }
+}
+
+.aboutUs {
+  display: block;
+  margin-top: 3rem;
+
+  &__resume {
+    padding: 3rem 1rem 10rem;
+    background-color: #f9f9f9;
+  }
+
+  &__resume span {
+    color: #777777;
+    font-size: 0.7rem;
+  }
+
+  &__button {
+    margin: 1rem 0rem;
+  }
+
+  .square {
+    padding: 3rem;
+
+    &__image {
+      background-color: #bead8e;
+      margin: -8rem 0rem 3rem;
+      height: 16rem;
+    }
+
+    &__image-margin {
+      height: 16rem;
+    }
+
+    &__icons {
+      position: absolute;
+      margin: 0rem 4.5rem;
+    }
+
+    &__shadow {
+      padding-left: 4rem;
+    }
+
+    &__shadow img {
+      opacity: 20%;
+      height: 5rem;
+      width: 12rem;
+      margin-bottom: 0rem;
+    }
+
+    &__text {
+      text-align: center;
+    }
+
+    &__text h2 {
+      font-family: "Old Standard TT";
+      font-weight: 500;
+    }
+
+    &__text span {
+      font-size: 0.8rem;
+    }
+
+    &__icon2 {
+      margin: 1rem 3.5rem;
+    }
+
+    &__background {
+      padding: 2rem;
+      color: #ffffff;
+      background-color: #222222;
+    }
+  }
+}
+
+.rooms {
+  text-align: center;
+
+  &__facilities {
+    margin: 1rem 3rem;
+
+    width: 14rem;
+
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  &__facilities img {
+    padding: 0.3rem;
+  }
+
+  .swiper {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+.rooms h1 {
+  padding: 2rem 0rem;
+}
+
+.video {
+  padding: 3rem 1rem;
+  color: #ffffff;
+  background-color: #222222;
+
+  &__container {
+    margin: 2rem 0rem;
+  }
+
+  &__container iframe {
+    width: 18rem;
+    height: 10rem;
+  }
+}
+
+.video h4 {
+  color: #bead8e;
+  padding-bottom: 2rem;
+}
+
+.video span {
+  color: #777777;
+  font-size: 0.7rem;
+}
+
+.records {
+  padding: 2rem 0rem;
+  background-color: #222222;
+  color: #ffffff;
+
+  &__item {
+    padding: 2rem;
+    text-align: center;
+    word-wrap: inherit;
+  }
+
+  &__item h1 {
+    padding-top: 1.5rem;
+  }
+
+  &__item span {
+    color: #999999;
+    font-size: 0.9rem;
+  }
+
+  &__numbers span {
+    color: #ffffff;
+  }
+}
+
+.footer {
+  margin: 4rem 2rem;
+  background-image: url(../assets/icons/background.svg);
+
+  &__logo {
+  }
+
+  .banner {
+    background-color: #f8f8f8;
+  }
+}

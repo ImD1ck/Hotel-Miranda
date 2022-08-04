@@ -1,0 +1,53 @@
+@use "index";
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT&display=swap");
+
+$font-title: "Old Standard TT";
+$font-subtitle: "Archivo";
+
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+h1 {
+  font-family: $font-title;
+  font-size: 3rem;
+  font-weight: 400;
+}
+h2,
+label,
+span {
+  font-family: $font-subtitle;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: $font-subtitle;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  line-height: 1.2rem;
+}
+
+.button {
+  font-family: $font-subtitle;
+  font-size: 0.8rem;
+  padding: 1rem 2.5rem;
+  margin: 0.6rem;
+  border: none;
+  color: #ffffff;
+  background-color: #bead8e;
+}
+
+.button:focus {
+  background-color: #333333;
+  border: 0.1rem solid rgba(#ffffff, 0.3);
+  margin: 0.5rem;
+}
