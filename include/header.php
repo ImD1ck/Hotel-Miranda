@@ -15,9 +15,9 @@
 
 <body>
 <header class="header">
-  <div class="nav"> 
-    <button class="nav__button" id="buttonNav" onClick="dropdown()"></button>
-  </div>
+    <div class="nav"> 
+      <button class="nav__button" id="buttonNav" onClick="dropdown()"></button>
+    </div>
     <div class="nav__list" id="dropMenu">
       <a href="./about.php">About Us</a>
       <a href="./rooms.php">Rooms</a>
@@ -26,42 +26,45 @@
     </div>
     <div class="title">
       <div class="logo">
-        <img src="./assets/icons/H.svg" alt="logo" />
-      </div>
-        <img
-          class="logo__name"
-          src="./assets/icons/Hotel-Miranda.svg"
-          alt="Hotel Miranda"
-        />
-    </div>
-    <div class="icons">
-      <div class="icon__item">
-        <img src="./assets/icons/person.svg" alt="logIn" />
-      </div>
-      <div class="icon__item">
-        <img src="./assets/icons/search.svg" alt="search" />
-      </div>
-    </div>
-
-    </header>
-
-    <section class="main">
-      <article class="principal">
-        <h4>THE ULTIMATE LUXURY EXPERIENCE</h4>
-        <h1 class="principal__title">
-        <?php echo $title; ?>
-        </h1>
-
-      <?php if($page == ""): ?>
-        <div class="button__principal">
-          <button class="button">TAKE A TOUR</button>
-          <button class="button">LEARN MORE</button>
+        <a href="./index.php">
+          <img src="./assets/icons/H.svg" alt="logo" />
+        </a>
         </div>
-      <?php else:  ?>
-      </article>
+        <a href="./index.php">
+          <img
+            class="logo__name"
+            src="./assets/icons/Hotel-Miranda.svg"
+            alt="Hotel Miranda"
+          />
+        </a>
+    </div>
 
-      <article class="subtitle">
-        <h4>Home | <span>Room Details</span></h4>
-      </article>
-      <?php endif ?>
-    </section>
+      <div class="icon">
+
+        <img src="./assets/icons/person.svg" alt="logIn" />
+
+        <img src="./assets/icons/search.svg" alt="search" />
+
+      </div>
+
+</header>
+
+<section class="main">
+  <article class="principal">
+    <h4>THE ULTIMATE LUXURY EXPERIENCE</h4>
+    <h1 class="principal__title">
+    <?php echo $title; ?>
+    </h1>
+
+  <?php if($page == ""): ?>
+    <div class="principal__button">
+      <button class="button">TAKE A TOUR</button>
+      <button class="button">LEARN MORE</button>
+    </div>
+  <?php else:  ?>
+    <div class="principal__subtitle">
+        <h4>Home | <span><?php echo $subtitle ?></span></h>
+      </div> 
+  <?php endif ?>
+  </article>
+</section>

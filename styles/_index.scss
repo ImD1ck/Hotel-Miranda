@@ -1,5 +1,39 @@
 @import "var";
 
+//   .calendar {
+//     background-color: $gris-neutro;
+//     padding: 1rem;
+//     justify-content: left;
+
+//     &__label {
+//       font-size: 0.8rem;
+//     }
+
+//     &__fecha {
+//       display: block;
+//       justify-content: left;
+//       padding: 0.5rem;
+//       padding-right: 55%;
+//       margin: 1rem 1rem 1rem 0rem;
+//       border: none;
+//       border-bottom: 0.2rem solid $beish;
+//       color: $gris-claro;
+//       background-color: transparent;
+//     }
+//     &__fecha::-webkit-calendar-picker-indicator {
+//       position: absolute;
+//       left: 0.4rem;
+
+//       filter: invert(79%) sepia(34%) saturate(237%) hue-rotate(0deg)
+//         brightness(85%) contrast(82%);
+//     }
+
+//     &__fecha:focus {
+//       border: none;
+//     }
+
+// }
+
 .aboutUs {
   display: block;
   margin-top: 3rem;

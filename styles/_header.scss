@@ -1,18 +1,19 @@
 @import "var";
 
 .header {
-  justify-content: space-around;
-  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 
   .nav {
     &__button {
       width: 1rem;
       height: 1rem;
-      margin: 0.7rem;
+      margin: 1rem 0.7rem;
       border: none;
       cursor: pointer;
-      background: url("../assets/icons/bars-solid.svg");
+      background: url("../assets/icons/bars-solid.svg") no-repeat;
     }
 
     &__button2 {
@@ -22,21 +23,25 @@
     &__list {
       display: none;
       position: absolute;
-      background-color: #f1f1f1;
-      min-width: 160px;
+      top: 6%;
+      width: 100%;
+      background-color: #fff;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
     }
 
     &__list a {
-      color: black;
-      padding: 12px 16px;
+      color: #000;
+      font-family: $subtitle;
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 1rem 2rem 0.8rem;
       text-decoration: none;
       display: block;
     }
 
-    &__list a:hover {
-      background-color: #ddd;
+    &__list a:focus {
+      background-color: $gris-neutro;
     }
 
     &__show {
@@ -48,11 +53,13 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 60%;
 
     .logo {
       width: 2rem;
       height: 2rem;
-      padding: 0.4rem;
+      padding-top: 0.5rem;
+      text-align: center;
       box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
         rgba(0, 0, 0, 0.05) 0px 5px 10px;
 
@@ -61,51 +68,35 @@
       }
     }
   }
+
+  .icon {
+    gap: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
 }
 
-.main {
+.principal {
+  padding: 3rem 1rem;
+  background-color: $gris-oscuro;
   color: #fff;
 
-  .principal {
-    padding: 3rem 1rem;
-    min-width: 100%;
-    background-color: $gris-oscuro;
-
-    &__title {
-      padding: 3rem 0rem 3rem;
-    }
+  &__title {
+    padding: 3rem 0rem 1rem;
   }
 
-  .calendar {
-    background-color: $gris-neutro;
+  &__subtitle {
+    float: right;
+    margin-bottom: -3.1rem;
     padding: 1rem;
-    justify-content: left;
+    background-color: #fff;
+    font-family: $subtitle;
+    font-weight: 700;
+    color: $gris-oscuro;
 
-    &__label {
-      font-size: 0.8rem;
-    }
-
-    &__fecha {
-      display: block;
-      justify-content: left;
-      padding: 0.5rem;
-      padding-right: 55%;
-      margin: 1rem 1rem 1rem 0rem;
-      border: none;
-      border-bottom: 0.2rem solid $beish;
-      color: $gris-claro;
-      background-color: transparent;
-    }
-    &__fecha::-webkit-calendar-picker-indicator {
-      position: absolute;
-      left: 0.4rem;
-
-      filter: invert(79%) sepia(34%) saturate(237%) hue-rotate(0deg)
-        brightness(85%) contrast(82%);
-    }
-
-    &__fecha:focus {
-      border: none;
+    .subtitle span {
+      color: $beish;
     }
   }
 }

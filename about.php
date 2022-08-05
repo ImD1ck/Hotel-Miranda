@@ -1,14 +1,12 @@
 <!-- Head, Header & Nav -->
 <?php
   $page = "About Us - ";
-  $title = "About US";
+  $title = "About Us";
+  $subtitle = "About";
   @include("include/header.php");
 ?>
 
     <section class="intro">
-      <article class="intro__subtitle">
-        <h4>Home | <span>About</span></h4>
-      </article>
       <div class="intro__presentation">
         <div class="intro__video">
           <video src="#"></video>
