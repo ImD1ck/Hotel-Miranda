@@ -1,4 +1,4 @@
-// @use "index";
+@use "index";
 @use "header";
 @use "footer";
 @import "./_var.scss";
@@ -21,11 +21,17 @@ h1 {
   font-size: 3rem;
   font-weight: 400;
 }
+h3 {
+  font-family: $title;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 h2,
 label,
 span {
   font-family: $subtitle;
   font-weight: 400;
+  color: $gris-oscuro;
 }
 
 h4 {

@@ -1,7 +1,8 @@
 <!-- Head, Header & Nav -->
 <?php 
-  $page = "Offers - "
+  $page = "Offers - ";
   $title = "Our Offers";
+  $subtitle = "Offers";
   @include("include/header.php");
 ?>
 

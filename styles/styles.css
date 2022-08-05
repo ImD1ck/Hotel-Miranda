@@ -1,4 +1,154 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT&family=Roboto:wght@400;700&display=swap");
+.calendar {
+  background-color: #333333;
+  padding: 1rem;
+  justify-content: left;
+}
+.calendar__label {
+  font-size: 0.8rem;
+}
+.calendar__fecha {
+  display: block;
+  justify-content: left;
+  padding: 0.5rem;
+  padding-right: 55%;
+  margin: 1rem 1rem 1rem 0rem;
+  border: none;
+  border-bottom: 0.2rem solid #bead8e;
+  color: #777777;
+  background-color: transparent;
+}
+.calendar__fecha::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0.4rem;
+  filter: invert(79%) sepia(34%) saturate(237%) hue-rotate(0deg) brightness(85%) contrast(82%);
+}
+.calendar__fecha:focus {
+  border: none;
+}
+
+.aboutUs {
+  display: block;
+  margin-top: 3rem;
+}
+.aboutUs__resume {
+  padding: 3rem 1rem 10rem;
+  background-color: #f9f9f9;
+}
+.aboutUs__resume span {
+  color: #777777;
+  font-size: 0.7rem;
+}
+.aboutUs__button {
+  margin: 1rem 0rem;
+}
+.aboutUs .square {
+  padding: 3rem;
+}
+.aboutUs .square__image {
+  background-color: #bead8e;
+  margin: -8rem 0rem 3rem;
+  height: 16rem;
+}
+.aboutUs .square__image-margin {
+  height: 16rem;
+}
+.aboutUs .square__icons {
+  position: absolute;
+  margin: 0rem 4.5rem;
+}
+.aboutUs .square__shadow {
+  padding-left: 4rem;
+}
+.aboutUs .square__shadow img {
+  opacity: 20%;
+  height: 5rem;
+  width: 12rem;
+  margin-bottom: 0rem;
+}
+.aboutUs .square__text {
+  text-align: center;
+}
+.aboutUs .square__text h2 {
+  font-family: "Old Standard TT";
+  font-weight: 500;
+}
+.aboutUs .square__text span {
+  font-size: 0.8rem;
+}
+.aboutUs .square__icon2 {
+  margin: 1rem 3.5rem;
+}
+.aboutUs .square__background {
+  padding: 2rem;
+  color: #ffffff;
+  background-color: #222222;
+}
+
+.rooms {
+  text-align: center;
+}
+.rooms__facilities {
+  margin: 1rem 3rem;
+  width: 14rem;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.rooms__facilities img {
+  padding: 0.3rem;
+}
+.rooms .swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.rooms h1 {
+  padding: 2rem 0rem;
+}
+
+.video {
+  padding: 3rem 1rem;
+  color: #ffffff;
+  background-color: #222222;
+}
+.video__container {
+  margin: 2rem 0rem;
+}
+.video__container iframe {
+  width: 18rem;
+  height: 10rem;
+}
+
+.video h4 {
+  color: #bead8e;
+  padding-bottom: 2rem;
+}
+
+.video span {
+  color: #777777;
+  font-size: 0.7rem;
+}
+
+.records {
+  padding: 2rem 0rem;
+  background-color: #222222;
+  color: #ffffff;
+}
+.records__item {
+  padding: 2rem;
+  text-align: center;
+  word-wrap: inherit;
+}
+.records__item h1 {
+  padding-top: 1.5rem;
+}
+.records__item span {
+  color: #999999;
+  font-size: 0.9rem;
+}
+.records__numbers span {
+  color: #ffffff;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -84,6 +234,65 @@
   color: #bead8e;
 }
 
+.footer {
+  background-image: url(../assets/icons/background.svg);
+}
+.footer__logo {
+  padding: 1rem;
+}
+.footer__logo span {
+  margin: 2rem 1rem;
+  color: #777777;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+.footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 3rem 1rem;
+}
+.footer .services {
+  padding: 0rem 1.5rem;
+}
+.footer .services__item {
+  column-count: 2;
+  height: 21rem;
+  column-fill: auto;
+}
+.footer .services__item ul li {
+  color: #777777;
+  font-size: 0.8rem;
+  font-family: "Roboto";
+  list-style: "+";
+  padding: 1rem;
+}
+.footer .contact {
+  padding: 1rem 1rem;
+}
+.footer .contact__item {
+  display: flex;
+  padding: 1.5rem 0rem;
+  color: #222222;
+}
+.footer .contact__item img {
+  margin-right: 1rem;
+}
+.footer .contact__item span {
+  color: #777777;
+  font-size: 0.9rem;
+}
+.footer .banner {
+  background: #f8f8f8;
+  padding: 1rem 1rem;
+  color: #222222;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 0.8rem;
+  line-height: 2rem;
+}
+
 html,
 * {
   box-sizing: border-box;
@@ -101,11 +310,18 @@ h1 {
   font-weight: 400;
 }
 
+h3 {
+  font-family: "Old Standard TT";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 h2,
 label,
 span {
   font-family: "Archivo";
   font-weight: 400;
+  color: #222222;
 }
 
 h4 {

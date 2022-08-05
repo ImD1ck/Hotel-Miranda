@@ -1,7 +1,8 @@
 <!-- Head, Header & Nav -->
 <?php 
-  $page = "Contact - "
+  $page = "Contact - ";
   $title = "New Details";
+  $subtitle = "Blog";
   @include("include/header.php");
 ?>
 

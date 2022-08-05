@@ -1,4 +1,65 @@
 @import "./_var.scss";
 
 .footer {
+  background-image: url(../assets/icons/background.svg);
+
+  &__logo {
+    padding: 1rem;
+  }
+  &__logo span {
+    margin: 2rem 1rem;
+    color: $gris-claro;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 3rem 1rem;
+  }
+
+  .services {
+    padding: 0rem 1.5rem;
+    &__item {
+      column-count: 2;
+      height: 21rem;
+      column-fill: auto;
+      ul li {
+        color: $gris-claro;
+        font-size: 0.8rem;
+        font-family: $roboto;
+        list-style: "+";
+        padding: 1rem;
+      }
+    }
+  }
+
+  .contact {
+    padding: 1rem 1rem;
+    &__item {
+      display: flex;
+      padding: 1.5rem 0rem;
+      color: $gris-oscuro;
+    }
+    &__item img {
+      margin-right: 1rem;
+    }
+    &__item span {
+      color: $gris-claro;
+      font-size: 0.9rem;
+    }
+  }
+
+  .banner {
+    background: #f8f8f8;
+    padding: 1rem 1rem;
+    color: $gris-oscuro;
+    font-family: $roboto;
+    font-weight: 900;
+    font-size: 0.8rem;
+    line-height: 2rem;
+  }
 }

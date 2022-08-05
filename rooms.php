@@ -2,6 +2,7 @@
 <?php 
   $page = "Rooms - ";
   $title = "Ultimate Room";
+  $subtitle = "Rooms";
   @include("include/header.php");
 ?>
 

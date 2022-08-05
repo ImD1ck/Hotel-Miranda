@@ -2,6 +2,7 @@
 <?php 
   $page = $_GET["room"]." - ";
   $title = "Ultimate Room";
+  $subtitle = "Romm Details";
   @include("include/header.php");
 ?>
 
