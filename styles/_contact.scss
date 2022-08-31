@@ -1,0 +1,42 @@
+@import "var";
+
+.info {
+  padding: 2rem;
+
+  &__container {
+    display: flex;
+    padding: 3.5rem 0rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  &__container img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.mapContainer {
+  margin: 2rem;
+  text-align: center;
+
+  #map {
+    // height: 14rem;
+    height: 500px;
+    width: 100%;
+  }
+
+  .mapButton {
+    border: none;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    color: #fff;
+    font-family: $roboto;
+    background-color: $beish;
+    cursor: pointer;
+  }
+
+  &__input {
+    align-self: center;
+  }
+}
