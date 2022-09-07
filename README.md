@@ -1,2 +1,4 @@
 # Hotel-Miranda
-### Pagina Web de hotel, solo Maqueta 
+### Pagina Web de hotel
+
+En Construccion 
